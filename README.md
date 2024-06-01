@@ -1,12 +1,12 @@
-**Project Installation Guide**
+#AccukNox Assessment Test Completed 
+##Project Installation Guide
 - Clone this repository
 - Install required packages : pip install -r requirements.txt
 - Activate env : .\env\Scripts\activate
 - Run application : python manage.py runserver 
 
 
-**API GUIDE : **
-**AccukNox Assessment Test Completed : **
+##API GUIDE 
 > [!NOTE]
 
 ```
