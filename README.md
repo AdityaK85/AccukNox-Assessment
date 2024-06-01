@@ -1,7 +1,7 @@
 **AccukNox Assessment Test Completed : **
 > [!NOTE]
->
-> ```
+
+```
 > User Login/Signup
 > • Users should be able to login with their email and password(email should be case insensitive)
 > • User should be able to signup with their email only(no otp verification required, valid email format is sufficient)
