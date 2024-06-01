@@ -256,7 +256,39 @@ c) There will be only one search keyword that will search either by name or emai
                                                   "status": 200,
                                                   "msg": "Request already sent"
                                               }
-                                    Response 21 :
+                                    Response 2 :
+                                              {
+                                                  "status": 403,
+                                                  "msg": "Something went wrong"
+                                              }
+
+
+```
+
+**Accept & Reject Friend Request API**
+
+```
+
+**Accept & Reject Friend Request**  :   
+                End point : /accept_reject_request/
+                Content-Type : application/json
+                Authorization : 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5NzY2MTE0LCJpYXQiOjE3MTcxNzQxMTQsImp0aSI6IjE5YWM4NDgzNTk3ZjRiMTZhYWVhMzgxNTIxYTAxNTgyIiwidXNlcl9pZCI6MX0.yqzWu9HsReArIKoKVmccRpvNCIqMDvas8tTY2zhmjnk'
+
+                Request Body :  {
+                                    "user_id": 2,
+                                    "request_user_id" : 1,
+                                    "type":"Accepted"     // Accepted | Rejected
+                                }
+                ________________________________________________________________RESPONSE________________________________________________________
+                Response :
+                          Success Response : 
+                                  {
+                                      "status": 200,
+                                      "msg": "Request Accepted"
+                                  }
+
+                            Failed Response :
+                                    Response 1 :
                                               {
                                                   "status": 403,
                                                   "msg": "Something went wrong"
