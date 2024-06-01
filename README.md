@@ -10,7 +10,7 @@
 ### POSTMEN SETUP 
 - Import API Collections
 - Click on import button
-- Enter this link : https://api.postman.com/collections/35427381-b3080f3b-c9c9-4c5e-af66-67d33690a7ca?access_key=PMAT-01HZ91TPWARS3S8BX9D47A5YJN
+- Enter this link in the input field : https://api.postman.com/collections/35427381-b3080f3b-c9c9-4c5e-af66-67d33690a7ca?access_key=PMAT-01HZ91TPWARS3S8BX9D47A5YJN
 
 
 ### DIRECT POSTMEN ACCESS
