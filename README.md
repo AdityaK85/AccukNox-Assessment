@@ -319,7 +319,7 @@ c) There will be only one search keyword that will search either by name or emai
 
 **Recived My Request API**
 
-```
+```python
 
 **Accept & Reject Friend Request**  :   
                 End point : /my_requests/
