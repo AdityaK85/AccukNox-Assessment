@@ -237,7 +237,7 @@ c) There will be only one search keyword that will search either by name or emai
 
 
 
-**Send Friend Request API**
+**Send Friend Request API (Only 3 Hits In a Minute)**
 
 ```python
 
