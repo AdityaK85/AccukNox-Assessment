@@ -17,7 +17,7 @@ c) There will be only one search keyword that will search either by name or emai
 • List pending friend requests(received friend request)
 • Users can not send more than 3 friend requests within a minute.
 
-
+```
 
 **API's Endpoints **
 
@@ -51,3 +51,4 @@ c) There will be only one search keyword that will search either by name or emai
 
 
 
+```
