@@ -1,17 +1,13 @@
 **AccukNox Assessment Test Completed : **
-User Login/Signup
-• Users should be able to login with their email and password(email should be case
-insensitive)
-• User should be able to signup with their email only(no otp verification required, valid
-email format is sufficient)
-• Except signup and login every api should be called for authenticated users only
-1
-Develop API for following functionalities:
-• API to search other users by email and name(paginate up to 10 records per page).
-a) If search keyword matches exact email then return user associated with the
-email.
-b) If the search keyword contains any part of the name then return a list of all
-users.
+> [!NOTE]
+> User Login/Signup
+> • Users should be able to login with their email and password(email should be case insensitive)
+> • User should be able to signup with their email only(no otp verification required, valid email format is sufficient)
+> • Except signup and login every api should be called for authenticated users only
+> 1 Develop API for following functionalities:
+> • API to search other users by email and name(paginate up to 10 records per page).
+> a) If search keyword matches exact email then return user associated with the email.
+> b) If the search keyword contains any part of the name then return a list of all users.
 eg:- Amarendra, Amar, aman, Abhirama are three users and if users search with "am"
 then all of these users should be shown in the search result because "am"
 substring is part of all of these names.
