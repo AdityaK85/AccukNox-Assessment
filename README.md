@@ -1,3 +1,8 @@
+**Project Installation Guide**
+
+
+
+**API GUIDE : **
 **AccukNox Assessment Test Completed : **
 > [!NOTE]
 
@@ -24,7 +29,7 @@ c) There will be only one search keyword that will search either by name or emai
 
 **BASE URL : http://127.0.0.1:8000**
 
-```
+```python
 
 **User Login**  :   
                 End point : /user_login/
@@ -286,6 +291,63 @@ c) There will be only one search keyword that will search either by name or emai
                                       "status": 200,
                                       "msg": "Request Accepted"
                                   }
+
+                            Failed Response :
+                                    Response 1 :
+                                              {
+                                                  "status": 403,
+                                                  "msg": "Something went wrong"
+                                              }
+
+
+```
+
+**Recived My Request API**
+
+```
+
+**Accept & Reject Friend Request**  :   
+                End point : /my_requests/
+                Content-Type : application/json
+                Authorization : 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5NzY2MTE0LCJpYXQiOjE3MTcxNzQxMTQsImp0aSI6IjE5YWM4NDgzNTk3ZjRiMTZhYWVhMzgxNTIxYTAxNTgyIiwidXNlcl9pZCI6MX0.yqzWu9HsReArIKoKVmccRpvNCIqMDvas8tTY2zhmjnk'
+
+                Request Body :  {
+                                    "user_id": 2,
+                                    "type":"Pending"    // Pending / Accepted / Rejected
+                                }
+                ________________________________________________________________RESPONSE________________________________________________________
+                Response :
+                          Success Response :
+                                  Pending Respone 1 : 
+                                              {
+                                                  "status": 200,
+                                                  "msg": "Pending Request ",
+                                                  "payload": [
+                                                      {
+                                                          "id": 2,
+                                                          "request_status": "Pending",
+                                                          "created_dt": "2024-06-01T01:00:58.498457Z",
+                                                          "user_id": 4,
+                                                          "name": "Amar",
+                                                          "email": "amar54@gmail.com"
+                                                      }
+                                                  ]
+                                              }
+                                  Accepted Respone 2 :
+                                              {
+                                                  "status": 200,
+                                                  "msg": "Accepted Request ",
+                                                  "payload": [
+                                                      {
+                                                          "id": 1,
+                                                          "request_status": "Accepted",
+                                                          "created_dt": "2024-06-01T00:38:21.668548Z",
+                                                          "user_id": 1,
+                                                          "name": "aditya",
+                                                          "email": "adityakotheakr79@gmail.com"
+                                                      }
+                                                  ]
+                                              }
 
                             Failed Response :
                                     Response 1 :
