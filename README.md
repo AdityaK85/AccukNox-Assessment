@@ -28,7 +28,7 @@ c) There will be only one search keyword that will search either by name or emai
 • Users can not send more than 3 friend requests within a minute.
 ```
 
-**API's Endpoints **
+### API's Endpoints
 
 **BASE URL : http://127.0.0.1:8000**
 
@@ -67,7 +67,7 @@ c) There will be only one search keyword that will search either by name or emai
 
 **Sign Up API**
 
-```
+```python
 
 **User Signup**  :   
                 End point : /user_signup/
@@ -109,7 +109,7 @@ c) There will be only one search keyword that will search either by name or emai
 
 **Get User By Email API**
 
-```
+```python
 
 **Get User By Email**  :   
                 End point : /get_user_by_email/
@@ -148,7 +148,7 @@ c) There will be only one search keyword that will search either by name or emai
 
 **Get User By Name API**
 
-```
+```python
 
 **Get User By Name**  :   
                 End point : /get_user_by_name/
@@ -239,7 +239,7 @@ c) There will be only one search keyword that will search either by name or emai
 
 **Send Friend Request API**
 
-```
+```python
 
 **Send Friend Request**  :   
                 End point : /send_frnd_request/
@@ -275,7 +275,7 @@ c) There will be only one search keyword that will search either by name or emai
 
 **Accept & Reject Friend Request API**
 
-```
+```python
 
 **Accept & Reject Friend Request**  :   
                 End point : /accept_reject_request/
