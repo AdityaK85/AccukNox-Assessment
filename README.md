@@ -20,12 +20,11 @@ c) There will be only one search keyword that will search either by name or emai
 • Users can not send more than 3 friend requests within a minute.
 ```
 
-
-```
-
 **API's Endpoints **
 
 **BASE URL : http://127.0.0.1:8000**
+
+```
 
 **User Login**  :   
                 End point : /user_login/
