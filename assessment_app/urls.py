@@ -9,5 +9,4 @@ urlpatterns = [
     path('send_frnd_request/', send_frnd_request ),
     path('accept_reject_request/', accept_reject_request ),
     path('my_requests/', my_requests ),
-    path('my_requests/', my_requests ),
 ]
