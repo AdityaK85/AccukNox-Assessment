@@ -28,8 +28,8 @@ c) There will be only one search keyword that will search either by name or emai
 **BASE URL : http://127.0.0.1:8000**
 
 **User Login**  :   
-                End point : /user_login
-                Content-Type : Json
+                End point : /user_login/
+                Content-Type : application/json
                 Request Body :  {
                                     "email":"adityakotheakr79@gmail.com",
                                     "password":"pass123"
@@ -63,8 +63,8 @@ c) There will be only one search keyword that will search either by name or emai
 ```
 
 **User Signup**  :   
-                End point : /user_signup
-                Content-Type : Json
+                End point : /user_signup/
+                Content-Type : application/json
                 Request Body :  {
                                     "name":"vedant",
                                     "email":"vedant@gmail.com",
@@ -89,6 +89,48 @@ c) There will be only one search keyword that will search either by name or emai
                                                   "msg": "Email Already Registered !Please login"
                                               }
                                     Response 2 :
+                                              {
+                                                  "status": 403,
+                                                  "msg": "Something went wrong"
+                                              }
+
+
+```
+
+
+
+
+**Get User By Email API**
+
+```
+
+**Get User By Email**  :   
+                End point : /get_user_by_email/
+                Content-Type : application/json
+                Authorization : 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5NzY2MTE0LCJpYXQiOjE3MTcxNzQxMTQsImp0aSI6IjE5YWM4NDgzNTk3ZjRiMTZhYWVhMzgxNTIxYTAxNTgyIiwidXNlcl9pZCI6MX0.yqzWu9HsReArIKoKVmccRpvNCIqMDvas8tTY2zhmjnk'
+
+                Request Body :  {
+                                    "email":"vedantkothekar@gmail.com"
+                                }
+                ________________________________________________________________RESPONSE________________________________________________________
+                Response :
+                          Success Response : 
+                                  {
+                                      "stauts": 200,
+                                      "msg": "1 Matches Found",
+                                      "payload": [
+                                          {
+                                              "id": 2,
+                                              "name": "vedant",
+                                              "email": "vedantkothekar@gmail.com",
+                                              "password": "123456",
+                                              "created_dt": "2024-05-31T22:57:32.701403Z"
+                                          }
+                                      ]
+                                  }
+
+                            Failed Response :
+                                    Response 1 :
                                               {
                                                   "status": 403,
                                                   "msg": "Something went wrong"
