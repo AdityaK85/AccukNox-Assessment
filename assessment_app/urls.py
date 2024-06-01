@@ -7,6 +7,7 @@ urlpatterns = [
     path('get_user_by_email/', get_user_by_email ),
     path('get_user_by_name/', get_user_by_name ),
     path('send_frnd_request/', send_frnd_request ),
+    path('accept_reject_request/', accept_reject_request ),
     path('my_requests/', my_requests ),
     path('my_requests/', my_requests ),
 ]
