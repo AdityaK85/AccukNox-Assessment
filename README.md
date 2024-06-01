@@ -1,5 +1,7 @@
 **AccukNox Assessment Test Completed : **
 > [!NOTE]
+>
+> ```
 > User Login/Signup
 > • Users should be able to login with their email and password(email should be case insensitive)
 > • User should be able to signup with their email only(no otp verification required, valid email format is sufficient)
@@ -16,6 +18,8 @@ c) There will be only one search keyword that will search either by name or emai
 • API to list friends(list of users who have accepted friend request)
 • List pending friend requests(received friend request)
 • Users can not send more than 3 friend requests within a minute.
+```
+
 
 ```
 
