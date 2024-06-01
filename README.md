@@ -137,3 +137,130 @@ c) There will be only one search keyword that will search either by name or emai
 
 
 ```
+
+**Get User By Name API**
+
+```
+
+**Get User By Name**  :   
+                End point : /get_user_by_name/
+                Content-Type : application/json
+                Authorization : 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5NzY2MTE0LCJpYXQiOjE3MTcxNzQxMTQsImp0aSI6IjE5YWM4NDgzNTk3ZjRiMTZhYWVhMzgxNTIxYTAxNTgyIiwidXNlcl9pZCI6MX0.yqzWu9HsReArIKoKVmccRpvNCIqMDvas8tTY2zhmjnk'
+
+                Request Body :  {
+                                    "name":"an",
+                                    "page":1
+                                }
+                ________________________________________________________________RESPONSE________________________________________________________
+                Response :
+                          Success Response : 
+                                  {
+                                    "stauts": 200,
+                                    "msg": "7 Matches Found",
+                                    "payload": [
+                                        {
+                                            "id": 2,
+                                            "name": "vedant",
+                                            "email": "vedantkothekar@gmail.com",
+                                            "password": "123456",
+                                            "created_dt": "2024-05-31T22:57:32.701403Z"
+                                        },
+                                        {
+                                            "id": 5,
+                                            "name": "aman",
+                                            "email": "aman54656@gmail.com",
+                                            "password": "123456",
+                                            "created_dt": "2024-05-31T22:58:22.873457Z"
+                                        },
+                                        {
+                                            "id": 8,
+                                            "name": "Anavawar",
+                                            "email": "anwarsns0000875@gmail.com",
+                                            "password": "123456",
+                                            "created_dt": "2024-05-31T23:09:43.776456Z"
+                                        },
+                                        {
+                                            "id": 9,
+                                            "name": "Anna",
+                                            "email": "anna@gmail.com",
+                                            "password": "123456",
+                                            "created_dt": "2024-05-31T23:09:57.525203Z"
+                                        },
+                                        {
+                                            "id": 10,
+                                            "name": "anmol",
+                                            "email": "anmoldev156@gmail.com",
+                                            "password": "123456",
+                                            "created_dt": "2024-05-31T23:11:41.663361Z"
+                                        },
+                                        {
+                                            "id": 12,
+                                            "name": "afjanl",
+                                            "email": "afjanl325@gmail.com",
+                                            "password": "123456",
+                                            "created_dt": "2024-05-31T23:12:08.483845Z"
+                                        },
+                                        {
+                                            "id": 13,
+                                            "name": "vedant",
+                                            "email": "vedant@gmail.com",
+                                            "password": "123456",
+                                            "created_dt": "2024-06-01T09:23:07.746657Z"
+                                        }
+                                    ]
+                                }
+
+                            Failed Response :
+
+                                    Response 1 :
+                                              {
+                                                  "stauts": 403,
+                                                  "msg": "No matches found"
+                                              }
+
+                                    Response 2 :
+                                              {
+                                                  "status": 403,
+                                                  "msg": "Something went wrong"
+                                              }
+
+
+```
+
+
+
+**Send Friend Request API**
+
+```
+
+**Send Friend Request**  :   
+                End point : /send_frnd_request/
+                Content-Type : application/json
+                Authorization : 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5NzY2MTE0LCJpYXQiOjE3MTcxNzQxMTQsImp0aSI6IjE5YWM4NDgzNTk3ZjRiMTZhYWVhMzgxNTIxYTAxNTgyIiwidXNlcl9pZCI6MX0.yqzWu9HsReArIKoKVmccRpvNCIqMDvas8tTY2zhmjnk'
+
+                Request Body :  {
+                                    "user_id": 4,
+                                    "request_user_id": 3
+                                }
+                ________________________________________________________________RESPONSE________________________________________________________
+                Response :
+                          Success Response : 
+                                  {
+                                      "status": 200,
+                                      "msg": "Friend request sent"
+                                  }
+
+                            Failed Response :
+                                    Response 1 :
+                                              {
+                                                  "status": 200,
+                                                  "msg": "Request already sent"
+                                              }
+                                    Response 21 :
+                                              {
+                                                  "status": 403,
+                                                  "msg": "Something went wrong"
+                                              }
+
+
+```
