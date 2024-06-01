@@ -56,3 +56,43 @@ c) There will be only one search keyword that will search either by name or emai
 
 
 ```
+
+
+**Sign Up API**
+
+```
+
+**User Signup**  :   
+                End point : /user_signup
+                Content-Type : Json
+                Request Body :  {
+                                    "name":"vedant",
+                                    "email":"vedant@gmail.com",
+                                    "password":"123456"
+                                }
+                ________________________________________________________________RESPONSE________________________________________________________
+                Response :
+                          Success Response : 
+                                  {
+                                      "status": 200,
+                                      "msg": "Register successfully",
+                                      "api_token": {
+                                          "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcyMjM5Nzk4NywiaWF0IjoxNzE3MjEzOTg3LCJqdGkiOiI1MWY1NzBjMDE5OWM0MTk1OGY2YWQzYTBiMGI2OWMxOCIsInVzZXJfaWQiOjEzfQ.DePDEgpDfNmfaeVy-0htqri54x7bOuADI98PIEeBu4A",
+                                          "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE5ODA1OTg3LCJpYXQiOjE3MTcyMTM5ODcsImp0aSI6IjRmNTIwNTE2ODk4ZDRhOWNiMTFjYzNjODUzMGRmZDA3IiwidXNlcl9pZCI6MTN9.advJTAraR1Oo5Zh7ly-942B-psiIu1eWjO2QqTQDDzA"
+                                      }
+                                  }
+
+                            Failed Response :
+                                    Response 1 : 
+                                              {
+                                                  "status": 403,
+                                                  "msg": "Email Already Registered !Please login"
+                                              }
+                                    Response 2 :
+                                              {
+                                                  "status": 403,
+                                                  "msg": "Something went wrong"
+                                              }
+
+
+```
